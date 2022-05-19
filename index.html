@@ -22,10 +22,32 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/965024376405762078/976205141810233344/Logo_Circle.png?size=4096">
 	<link rel="icon" href="img/favicon.png">
+	<meta name="theme-color" content="#FFFF00" />
 
 	<meta property="og:description" content="Proejct Z Fivem Roleplay Server | we are the vision." />
 
+	<meta name="Keywords" content="Roleplay, Project, Projectz, Projectzrp Project-z, Projektz, Projekt-z, project, Prokectzrp, Rollenspiel, Fivem Roleplay"/>
+
 </head>
+<script>
+    $(document).ready (function(){
+        var myAudio = document.getElementById("king");
+        var more = 0;
+        $(".sound").text("play");
+        $('.round').click (function(){
+            if(more %2 ==0){
+                $(myAudio)[0].play();
+                $(".sound").text("stop");
+                more++;
+            }
+            else if(more % 2 != 0){
+                $(myAudio)[0].pause();
+                $(".sound").text("play");
+                more++;
+            }
+        });
+    });
+</script>
 <body data-spy="scroll" data-target="#mynav" data-offset="85">
 <div id="preloader">
 	<div id="status">
@@ -54,11 +76,12 @@
 					</div>
 					<div id="mynav" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav main-nav-list">
-							<li><a href="#team">Project verwaltungen</a></li>
 							<li><a href="#server">Server Beschreibung</a></li>
-							<li><a href="#armurerie">Tritt bei</a></li>
 							<li><a href="https://project-z-shop.tebex.io/">Shop</a></li>
+							<li><a href="https://status.project-z.xyz">Status</a></li>
 							<li><a href="regelwerk.html#regelwerk">Regelwerk</a></li>
+							<li><a href="./fraktionsregelwerk.html#Fraktionsregelwerk">Fraktionregelwerk</a></li>
+
 							<li><a href="https://discord.gg/projectz"><img src="https://cdn.discordapp.com/attachments/965024376405762078/975867172024889394/discord.png?size=4096" class="dclol" style="width: 30px; margin-top: -3px;"></a></li></img>
 						</ul>
 					</div>		
@@ -229,10 +252,7 @@
 					<div class="section-title wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms">			
 						<h1><span>Server Beschreibung</span></h1>								
 					</div>					
-						<h3 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">Beschreibung 1</h3>
-						<h3 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">Beschreibung 2</h3>
-						<h3 class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms"><span class="main-color">Beschreibung 3</h3>
-
+					<h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">Komm zu <code style="color: yellow; background-color: transparent;">Project Z</code> und erlebe ein einzigartiges RP-Abenteuer, mit einer Vielzahl an Szenarien und edlen Designs sowie einer vielfältigen  Auswahl an  Fahrzeugen, werde Teil der Community, erstelle und individualisiere einen Charakter, Objekte deiner Wahl und tauche ein in die Community von <code style="color: yellow; background-color: transparent;">Project Z</code>, die sich für einen Weg zwischen Gut und Böse entscheidet.</h3>
 
 					</div>
 				</div>
@@ -246,9 +266,7 @@
 							<div class="section-title wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms">			
 								<h1><span>Tritt bei</span></h1>							
 							</div>				
-							<h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">description 1</h3>
-							<h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">description 2</h3>
-							<h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms"><span class="main-color">description 3</span> </h3>
+							<h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms"><a href="https://discord.gg/projectz">discord</a> | <a href="https://servers.fivem.net/servers/detail/zmd7yp">fivem</a></h3>
 		
 						</div>
 					</div>
@@ -257,6 +275,7 @@
 					<div class="container-fluid">	 		
 						<div class="wrapper-works">
 							<div class="portfoliO">
+								<!-- <iframe src="https://cfx.re/join/zmd7yp" style="background-color: transparent;"></iframe> -->
 								<iframe src="https://discordapp.com/widget?id=867602014141808672&theme=dark" class="dcbg" style="border-radius: 15px;"width="350" height="500" allowtransparency="true" frameborder="0" andbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 							</div>		
 						</div>
@@ -278,7 +297,7 @@
 <div class="bottom-footer">
 	<div class="container"> 
 		<div class="bottom-footer-left wow fadeInUp" data-wow-duration="1s" data-wow-delay="450ms">
-			<p><span>&#169; last web update 17.05 | since 2021 <a href="https://soon.com" style="color: red;"><b>Projectz</b></a></span></p>
+			<p><span>&#169; last web update 18.05 | since 2021 <a href="https://project-z.xyz" style="color: yellow;"><b>Projectz</b></a></span></p>
 
 		</div>		  
 	</div>
@@ -303,4 +322,28 @@
 	}
 </script>
 </body>
+<script>
+	document.addEventListener('contextmenu', event => event.preventDefault());
+
+  document.onkeydown = function (e) {
+  if (event.keyCode == 123) {
+	  return false;
+  }
+  if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
+	  return false;
+  }
+  if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
+	  return false;
+  }
+  if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
+	  return false;
+  }
+  if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
+	  return false;
+  }
+  if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
+	  return false;
+  }
+}
+</script>
 </html>
